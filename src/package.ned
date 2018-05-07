@@ -1,0 +1,3 @@
+package aloha;
+
+@license(LGPL);
