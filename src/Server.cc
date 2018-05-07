@@ -8,6 +8,12 @@
 //
 
 #include "Server.h"
+#include "LiveRecorder.h"
+
+char collisions_topic[] = "com.examples.events.collisions";
+Register_ResultRecorder("Collision_Recorder", wampinterfaceforomnetpp::LiveRecorder<collisions_topic>());
+char receive_topic[] = "com.examples.events.received";Register_ResultRecorder("Receive_Recorder", wampinterfaceforomnetpp::
+LiveRecorder<receive_topic>());
 
 namespace aloha {
 

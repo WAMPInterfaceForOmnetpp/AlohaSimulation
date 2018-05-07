@@ -236,7 +236,6 @@ void Host::refreshDisplay() const
 
 void Host::handleParameterChange(const char *parname)
 {
-    txRate = par("txRate");
     iaTime = &par("iaTime");
     pkLenBits = &par("pkLenBits");
 
