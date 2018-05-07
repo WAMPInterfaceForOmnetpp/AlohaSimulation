@@ -3,6 +3,7 @@
 	<name>AlohaSimulation</name>
 	<comment></comment>
 	<projects>
+		<project>WAMPInterfaceForOmnetpp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -234,5 +234,14 @@ void Host::refreshDisplay() const
     }
 }
 
+void Host::handleParameterChange(const char *parname)
+{
+    txRate = par("txRate");
+    iaTime = &par("iaTime");
+    pkLenBits = &par("pkLenBits");
+
+    slotTime = par("slotTime");
+    isSlotted = slotTime > 0;
+}
 
 }; //namespace

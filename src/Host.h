@@ -58,6 +58,7 @@ class Host : public cSimpleModule
   public:
     Host();
     virtual ~Host();
+    virtual void handleParameterChange(const char *parname) override;
 
   protected:
     virtual void initialize() override;
