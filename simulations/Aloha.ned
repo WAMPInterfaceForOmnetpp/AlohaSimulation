@@ -26,9 +26,14 @@ network Aloha
         double slotTime @unit(ms);  // zero means no slots (pure Aloha)
         @display("bgi=background/terrain,s;bgb=1000,1000");
     submodules:
-        callee: SimulationCallee;
-        server: Server;
+        callee: SimulationCallee {
+            @display("p=947.776,52.208");
+        }
+        BaseStation: Server {
+            @display("p=500,500");
+        }
         host[numHosts]: Host {
+            @display("i=device/accesspoint;p=44.176,959.824;is=s");
             txRate = txRate;
             slotTime = slotTime;
         }

@@ -29,7 +29,7 @@ Host::~Host()
 void Host::initialize()
 {
     stateSignal = registerSignal("state");
-    server = getModuleByPath("server");
+    server = getModuleByPath("BaseStation");
     if (!server)
         throw cRuntimeError("server not found");
 
